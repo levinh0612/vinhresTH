@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
-int tong(int a, int b);
 int hieu(int a, int b){
 	return a-b;
+};
+int tong(int a, int b){
+	return a+b;
 };
 
 int main()
@@ -17,6 +19,8 @@ int main()
 	cin >> phepToan;
 	int hieuSo = hieu(a,b);
 	cout <<"Hieu la:"<<hieuSo;
+	int tongSo = tong(a,b);
+	cout <<"Tong la:"<<tongSo;
 	system("pause");
 	return 0;
 }
